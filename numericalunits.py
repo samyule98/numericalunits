@@ -49,6 +49,7 @@ c0 = mu0 = μ0 = eps0 = ε0 = Z0 = hPlanck = hbar = ħ = kB = GNewton = sigmaSB 
 Rgas = e = uBohr = uNuc = aBohr = me = mp = mn = Rinf = Ry = Hartree = \
     ARichardson = Phi0 = KJos = RKlitz = 0.
 REarth = g0 = Msolar = MEarth = 0.
+deg = 0.
 
 ########################### Main code #######################################
 
@@ -417,6 +418,10 @@ def set_derived_units_and_constants():
     g0 = 9.80665 * m / s**2 #standard earth gravitational acceleration
     Msolar = 1.98847e30 * kg #mass of the sun
     MEarth = 5.9722e24 * kg #mass of earth
+    
+    #Angles
+    global deg
+    deg = pi / 180
 
 # Set units randomly when this module is initialized. (Don't worry: If the
 # module is imported many times from many places, this command will only
